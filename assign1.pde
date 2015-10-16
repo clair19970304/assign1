@@ -35,9 +35,10 @@ void setup () {
 
 void draw() {
   x5 ++;
-  x5 %= 640;
+  x5 %= 1280;
   image(bg1Image,x5,0);
-  image(bg2Image,x5-640,0);
+  image(bg2Image,-640+x5,0);
+  image(bg1Image,-1280+x5,0);
   x1 +=5;
   x1 %= 640;
   image(enemyImage,x1,y1);
